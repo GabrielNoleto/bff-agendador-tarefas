@@ -8,6 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class LoginDTORequest {
+
     private String email;
     private String senha;
 
