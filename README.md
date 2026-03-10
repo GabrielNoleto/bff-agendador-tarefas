@@ -20,7 +20,7 @@ O projeto foi construído utilizando tecnologias modernas para sistemas distribu
 
 ## 🏗️ Arquitetura e Estrutura do Projeto
 
-A estrutura de pastas reflete a separação de responsabilidades (Clean Architecture/DDD approach):
+A estrutura de pastas reflete a separação de responsabilidades:
 
 * **`business`**: Regras de negócio, Services e DTOs (`in`/`out`).
 * **`controller`**: Endpoints da API e tratamento global de erros.
