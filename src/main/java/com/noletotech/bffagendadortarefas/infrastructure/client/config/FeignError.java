@@ -21,7 +21,7 @@ public class FeignError implements ErrorDecoder {
 
             case 409:
                 return new ConflictException(erro + mensagemErro);
-            case 403:
+            case 404:
                 return new ResourceNotFoundException(erro + mensagemErro);
 
             case 401:
