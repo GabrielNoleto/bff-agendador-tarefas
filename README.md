@@ -46,11 +46,11 @@ Utilizamos uma configuração customizada de `FeignError` para interceptar falha
 
 ## 🛡️ Tratamento Global de Erros (GlobalExceptionHandler)
 
-O projeto utiliza `@RestControllerAdvice` para centralizar o tratamento de exceções. Isso garante que o Frontend receba sempre um JSON padronizado, independentemente de onde o erro ocorreu.
+O projeto utiliza `@RestControllerAdvice` para centralizar o tratamento de exceções. Isso garante que o Frontend receba sempre um JSON padronizado, independentemente de onde o erro ocorreu.  
+exemplo:
 
 | Exceção | Descrição | Status HTTP |
 | :--- | :--- | :--- |
-| `BusinessException` | Erros de regra de negócio. | 422 |
 | `InfrastructureException` | Falhas de comunicação (ex: erro no Feign). | 500 |
 | `ResourceNotFoundException` | Recurso não encontrado. | 404 |
 | `UnauthorizedException` | Falhas de autenticação. | 401 |
